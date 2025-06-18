@@ -1,0 +1,331 @@
+@import 'common.css';
+
+/* Page Header */
+.page-header {
+    position: relative;
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/about-header.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-text);
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    animation: fadeIn 1s ease-in;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Our Story Section */
+.our-story {
+    padding: var(--spacing-xxl) 0;
+    background-color: #fff;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.story-text h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.story-text p {
+    margin-bottom: var(--spacing-md);
+    color: var(--gray);
+    line-height: 1.8;
+}
+
+.story-image {
+    position: relative;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Our Mission Section */
+.our-mission {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--gray-light);
+    text-align: center;
+}
+
+.mission-content h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.mission-card {
+    background: #fff;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.mission-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.mission-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.mission-card p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Our Team Section */
+.our-team {
+    padding: var(--spacing-xxl) 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team-content h2 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.team-member {
+    background: var(--gray-light);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2rem auto 1rem auto;
+    display: block;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+
+.member-info {
+    padding: var(--spacing-lg);
+}
+
+.member-info h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.member-info p {
+    color: var(--gray);
+    margin-bottom: var(--spacing-md);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.social-links a {
+    color: var(--gray);
+    font-size: 1.2rem;
+    transition: var(--transition-base);
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--gray-light);
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.feature-card {
+    background: #fff;
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.feature-card p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: var(--spacing-xxl) 0;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.cta-buttons {
+    margin-top: var(--spacing-xl);
+}
+
+.cta-buttons .btn {
+    margin: 0 var(--spacing-sm);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-header {
+        height: 30vh;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .story-content {
+        grid-template-columns: 1fr;
+    }
+
+    .story-image {
+        order: -1;
+    }
+
+    .mission-grid,
+    .team-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons .btn {
+        display: block;
+        margin: var(--spacing-sm) 0;
+    }
+}
+
+/* Only keep icon color red, revert link color to default */
+.feature i, .mission-icon, .team-member i, .footer-section i {
+    color: var(--secondary-color) !important;
+}
+
+/* Remove previous a, .footer-section a color overrides */
+
+.nav-links a.active, .nav-links a.active:visited, .nav-links a.active:focus {
+    color: #e74c3c !important;
+}
+
+.feature i {
+    color: #e74c3c !important;
+}
+
+.role-red {
+    color: #e74c3c;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.btn-primary {
+    background: #e74c3c !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0.8rem 1.5rem;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-primary:hover {
+    background: #c0392b !important;
+    color: #fff !important;
+}
+
+.footer-section i {
+    color: #fff !important;
+}
+
+a:hover, .footer-section a:hover {
+    color: #e74c3c !important;
+} 

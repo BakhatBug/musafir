@@ -1,0 +1,243 @@
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('../images/tours-header.jpg') center/cover no-repeat;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+    margin-top: 80px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Tour Filters */
+.tour-filters {
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    border-radius: 16px;
+    max-width: 900px;
+    margin: -60px auto 3rem auto;
+    padding: 2.5rem 2rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.filter-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-group label {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.3rem;
+}
+
+.filter-group select {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+.filter-group select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+/* Tour Listings */
+.tour-listings {
+    padding: 4rem 1rem;
+    background: #f9f9f9;
+}
+
+.tour-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.tour-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-5px);
+}
+
+.tour-image-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.tour-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/9;
+}
+
+.tour-card-content {
+    padding: 1.5rem;
+}
+
+.tour-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.tour-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.tour-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.tour-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.tour-details i {
+    color: #e67e22;
+}
+
+/* Tour Features */
+.tour-features {
+    padding: 4rem 1rem;
+    background: #fff;
+}
+
+.tour-features h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+/* Booking CTA */
+.booking-cta {
+    padding: 4rem 1rem;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/skardu.jpg') center/cover no-repeat;
+    text-align: center;
+    color: #fff;
+    border-radius: 0;
+    margin-top: 4rem;
+}
+
+.booking-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+}
+
+.booking-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-cta .cta-button {
+    background: var(--secondary-color);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border-radius: 6px;
+    border: none;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+.booking-cta .cta-button:hover {
+    background: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .tour-filters {
+        max-width: 98vw;
+        padding: 2rem 0.5rem 1rem 0.5rem;
+    }
+    .filter-container {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-header {
+        height: 35vh;
+        margin-top: 60px;
+    }
+    .hero-header h1 {
+        font-size: 2rem;
+    }
+    .tour-filters {
+        margin: -30px auto 2rem auto;
+        padding: 1.2rem 0.2rem 0.5rem 0.2rem;
+    }
+    .booking-cta h2 {
+        font-size: 2rem;
+    }
+}
+
+.hero-header {
+    position: relative;
+    height: 60vh;
+    background: url('../images/naran.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+    overflow: hidden;
+}

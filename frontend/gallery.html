@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Musafir Kahani</title>
+    <meta name="description" content="Explore the breathtaking beauty of Northern Pakistan through our photo gallery. From majestic mountains to crystal-clear lakes, discover the wonders of Pakistan.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/">Musafir Kahani</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="tours.html">Tour Packages</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header hero-header">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Photo Gallery</h1>
+            <p>Discover the breathtaking beauty of Northern Pakistan</p>
+        </div>
+    </section>
+
+    <!-- Gallery Quote -->
+    <div class="gallery-quote">
+        <i class="fas fa-mountain"></i>
+        <span>“Travel leaves you speechless, then turns you into a storyteller.”</span>
+    </div>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="mountains">Mountains</button>
+            <button class="filter-btn" data-filter="lakes">Lakes</button>
+            <button class="filter-btn" data-filter="valleys">Valleys</button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+        </div>
+    </section>
+
+    <!-- Modern Masonry Gallery Grid -->
+    <section class="gallery-masonry">
+        <div class="gallery-masonry-grid">
+            <div class="gallery-masonry-item" data-category="mountains">
+                <img src="images/hunza.jpg" alt="Hunza Valley">
+                <div class="caption">Hunza Valley</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="mountains">
+                <img src="images/skardu.jpg" alt="Skardu">
+                <div class="caption">Skardu</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="mountains">
+                <img src="images/rakaposhi.jpg" alt="Rakaposhi">
+                <div class="caption">Rakaposhi</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="mountains">
+                <img src="images/k2.webp" alt="K2 Mountain">
+                <div class="caption">K2 Mountain</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="lakes">
+                <img src="images/attabad.jpg" alt="Attabad Lake">
+                <div class="caption">Attabad Lake</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="lakes">
+                <img src="images/saif.jpg" alt="Lake Saiful Muluk">
+                <div class="caption">Lake Saiful Muluk</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="valleys">
+                <img src="images/arang kel.jpg" alt="Arang Kel">
+                <div class="caption">Arang Kel</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="valleys">
+                <img src="images/arang kel 2.jpg" alt="Arang Kel Village">
+                <div class="caption">Arang Kel Village</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="valleys">
+                <img src="images/kumrat2.jpg" alt="Kumrat Valley">
+                <div class="caption">Kumrat Valley</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="valleys">
+                <img src="images/kalash.jpg" alt="Kalash Valley">
+                <div class="caption">Kalash Valley</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="valleys">
+                <img src="images/deosai.jpg" alt="Deosai Plains">
+                <div class="caption">Deosai Plains</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="mountains">
+                <img src="images/nanga.jpg" alt="Nanga Parbat">
+                <div class="caption">Nanga Parbat</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="culture">
+                <img src="images/karimabad.jpg" alt="Karimabad">
+                <div class="caption">Karimabad</div>
+            </div>
+            <div class="gallery-masonry-item" data-category="adventure">
+                <img src="images/chairlift.jpg" alt="Chairlift Ride">
+                <div class="caption">Chairlift Adventure</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption"></div>
+        <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +923264246755</p>
+                <p><i class="fas fa-envelope"></i> musafirkahani@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="tours.html">Tour Packages</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Musafir Kahani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html> 
