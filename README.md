@@ -12,7 +12,7 @@ A modern website for a travel agency specializing in road trips to Northern Paki
 
 ## Tech Stack
 - Frontend: HTML5, CSS3, JavaScript
-- Backend: Java (Spring Boot)
+- Backend: Express js
 - Deployment: Vercel
 
 ## Setup Instructions
