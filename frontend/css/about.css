@@ -292,22 +292,22 @@
 /* Remove previous a, .footer-section a color overrides */
 
 .nav-links a.active, .nav-links a.active:visited, .nav-links a.active:focus {
-    color: #e74c3c !important;
+    color: var(--secondary-color) !important;
 }
 
 .feature i {
-    color: #e74c3c !important;
+    color: var(--secondary-color) !important;
 }
 
 .role-red {
-    color: #e74c3c;
+    color: var(--secondary-color);
     font-weight: 600;
     margin-bottom: 1rem;
     font-size: 1.05rem;
 }
 
 .btn-primary {
-    background: #e74c3c !important;
+    background: var(--secondary-color) !important;
     color: #fff !important;
     border: none;
     border-radius: 5px;
@@ -318,7 +318,7 @@
     display: inline-block;
 }
 .btn-primary:hover {
-    background: #c0392b !important;
+    background: var(--primary-color) !important;
     color: #fff !important;
 }
 
@@ -327,5 +327,5 @@
 }
 
 a:hover, .footer-section a:hover {
-    color: #e74c3c !important;
+    color: var(--secondary-color) !important;
 } 

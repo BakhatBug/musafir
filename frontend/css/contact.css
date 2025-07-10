@@ -238,7 +238,7 @@
 .hero-header {
     position: relative;
     height: 60vh;
-    background: url('/images/naran.jpg') no-repeat center center;
+    background: url('../images/hunza.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -268,8 +268,6 @@
 .hero-header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    font-family: 'Pacifico', cursive;
-    letter-spacing: 1px;
 }
 .hero-header p {
     font-size: 1.2rem;
@@ -365,11 +363,11 @@
 }
 
 .nav-links a.active, .nav-links a.active:visited, .nav-links a.active:focus {
-    color: #e74c3c !important;
+    color: var(--secondary-color) !important;
 }
 
 a:hover, .footer-section a:hover {
-    color: #e74c3c !important;
+    color: var(--secondary-color) !important;
 }
 
 
@@ -418,7 +416,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e74c3c;
+    color: var(--secondary-color);
 }
 
 footer {
@@ -449,7 +447,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #e74c3c;
+    color: var(--secondary-color);
 }
 
 .footer-bottom {
@@ -460,5 +458,5 @@ footer {
 }
 
 .contact-intro p {
-    color: #e74c3c;
+    color: var(--secondary-color);
 } 

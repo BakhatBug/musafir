@@ -372,8 +372,6 @@
 .hero-header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    font-family: 'Pacifico', cursive;
-    letter-spacing: 1px;
 }
 
 .hero-header p {
@@ -402,20 +400,19 @@
 }
 
 .gallery-quote span {
-    font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
     color: var(--primary-color);
     font-weight: 400;
 }
 
 .gallery-quote .fa-mountain {
-    color: #e74c3c !important;
+    color: var(--secondary-color) !important;
 }
 
 .nav-links a.active, .nav-links a.active:visited, .nav-links a.active:focus {
-    color: #e74c3c !important;
+    color: var(--secondary-color) !important;
 }
 
 a:hover, .footer-section a:hover {
-    color: #e74c3c !important;
+    color: var(--secondary-color) !important;
 } 

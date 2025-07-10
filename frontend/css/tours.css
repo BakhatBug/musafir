@@ -119,7 +119,7 @@
 }
 
 .tour-card h3 {
-    color: #2c3e50;
+    color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
@@ -156,7 +156,7 @@
 .tour-features h2 {
     text-align: center;
     margin-bottom: 3rem;
-    color: #2c3e50;
+    color: var(--primary-color);
 }
 
 /* Booking CTA */
@@ -172,8 +172,6 @@
 .booking-cta h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-family: 'Pacifico', cursive;
-    letter-spacing: 1px;
 }
 
 .booking-cta p {
@@ -197,7 +195,7 @@
 }
 
 .booking-cta .cta-button:hover {
-    background: #c0392b;
+    background: var(--primary-color);
 }
 
 /* Responsive Design */
