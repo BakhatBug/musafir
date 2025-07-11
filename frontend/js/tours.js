@@ -82,7 +82,7 @@ function displayTours(tours) {
                         ${tour.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
                     </ul>
                 </div>
-                <a href="tour-details.html?id=${tour.id}" class="btn btn-primary">View Details</a>
+                <a href="https://wa.me/923264246755?text=Hi! I'm interested in booking the ${tour.name} (${tour.duration} - PKR ${tour.price.toLocaleString()}). Can you provide more details?" class="btn btn-primary" target="_blank">Book Now</a>
             </div>
         `;
         tourGrid.appendChild(tourCard);
